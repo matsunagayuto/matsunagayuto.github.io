@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引越しのhikkostep お問い合わせ</title>
+
+    <style>
+         html{
+        height:100%;
+        width:100%;
+            z-index: 3;
+    }
+    body{
+        margin:0;
+        height:100%;
+        width:100%;
+    }
+    body a{
+    text-decoration: none;
+    color:black;
+}
+    /*ヘッダー始まり*/
+    /* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+    opacity: 0.8;
+    margin-left:50px;
+ }
+ 
+.site-header {
+  position: relative;
+  background-color: beige; }
+ 
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } 
+
+    .about-content a{
+        width:24.3%;
+        height:250px;
+        margin:auto;
+    }
+    .content-k{
+        border-radius: 50px;
+        padding: 3%;
+        height:300px;
+        background-color: beige;
+        text-align: center;
+        margin:auto;
+        width:25%
+    }
+    .content-k h2{
+        font-size: 15px;
+    }
+
+
+
+}
+    @media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+ 
+.nav__item a {
+    color: black;
+    opacity: 0.8;
+  display: block;
+  padding: 1.5rem 1rem; }
+ 
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } 
+    .about-content a{
+        text-decoration: none;
+        width:100%;
+        margin-bottom: 10px;  
+        height:200px;
+
+     }
+     .about-content-link1{
+        margin-left:1%;
+     }
+     .about-content1{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 50px;
+     }
+     .about-content2{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        border-radius: 50px;
+     }
+     .about-content3{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        border-radius: 50px;
+     }
+
+    }
+
+   
+    /*ヘッダー終わり*/
+        /*コンテンツ始まり*/
+        .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#successMessage {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+         /*コンテンツ終わり*/
+
+     /*フッター始まり*/
+.bac{
+    
+    background-image: url(page1.jpg);
+}
+.front-footer{
+   background-color: beige;
+   min-height:10%;
+   opacity: 0.4;
+   padding:6%;
+}
+.front-footer-content{
+   background-color: white;
+   display:flex;
+   flex-wrap: wrap;
+   width:100%
+}
+
+.front-footer1{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.front-footer2{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.footer{
+   opacity: 0.8;
+   background-color: beige;
+   color:black;
+   padding: 8%;
+}
+.footer-content{
+   display: flex;
+   flex-wrap: wrap;
+   width:100%;
+}
+.footer-content1{
+   text-align: center;
+   margin:auto;
+   width:300px
+}
+.footer-content2{
+   text-align: center;
+   margin: auto;
+   width:300px
+}
+.tooter a{
+   margin:auto;
+}
+ /*フッター終わり*/
+ .nav__toggle{
+    opacity: 0.5;
+}
+    </style>
+    <script>
+        
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Perform any additional validation here
+  
+  // Simulate form submission success
+  setTimeout(function() {
+    document.getElementById('successMessage').innerHTML = 'Form submitted successfully!';
+    document.getElementById('successMessage').style.display = 'block';
+  }, 1000);
+});
+    </script>
+</head>
+<body>
+            <!--ヘッダー始まり-->
+        <!-- Header Start -->
+        <div id="site-content">
+            <header class="site-header">
+                <div class="wrapper site-header__wrapper">
+                <a href="./index.html" class="brand">hikkostep</a>
+                <nav class="nav">
+                  <a href="./contact.html" class="nav__toggle" aria-expanded="false" type="button">
+                    依頼　お問い合わせ
+                    </a>
+                    <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="./index.html">Home</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="./service.html">Services</a></li>
+                    <li class="nav__item"><a href="./contact.htm">Hire us</a></li>
+                    <li class="nav__item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+            <!-- Header End -->
+            <!--ヘッダー終わり-->
+             <!--コンテンツ始まり-->
+             <div class="container">
+                <h1>お問い合わせ</h1>
+                <form action="mailto:sworksmy1203@icloud.com" method="POST" enctype="text/plain" id="contactForm" >
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <p>商品の金額は、時期により左右します。お問い合わせから、ご確認ください。</p>
+                  <p>こちらのeメール先にこちらから連絡させていただきます。</p>
+                  <p>※機種によっては、文字化けしてしまいます。その場合は、yamada tarou　などアルファベットにて入力をよろしくお願いします。</p>
+            
+                  <button type="submit">Submit</button>
+                </form>
+                <div id="successMessage"></div>
+              </div>
+            
+             <!--コンテンツ終わり-->
+
+
+
+
+ <!--フッター始まり--> 
+    <div class="bac">
+        <div class="front-footer">
+            <div class="front-footer-content">
+                <div class="front-footer1">
+                    <p>電話でのお問い合わせ</p>
+                    <p>090-4108-6119</p>
+                </div>
+                <div class="front-footer2">
+                    <p>メールでのお問い合わせ</p>
+                    <p>sworksmy1203@icloud.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-content1">
+                    <div class="sprai">
+                        <p>about</p>
+                        <a href="./price3">ざな専用ぼったん</a>
+                    </div>
+                </div>
+                <div class="footer-content2">
+                    <p>us</p>
+                    <div class="low">
+                        <a href="./low.html">特定商取引に関する表記</a>
+                    </div>
+                    <div class="low">
+                        <a href="./contact.html">お問い合わせ</a>
+                    </div>
+                    <div class="low">
+                        <a href="./service.html">サービス概要 ご依頼の流れ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--フッター終わり-->
+    
+</body>
+</html>

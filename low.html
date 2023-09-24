@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引越しのhikkostep  特定商取引に関する表記</title>
+    
+    <style>
+            html{
+        height:100%;
+        width:100%;
+            z-index: 3;
+    }
+    body{
+        margin:0;
+        height:100%;
+        width:100%;
+    }
+    body a{
+    text-decoration: none;
+    color:black;
+}
+    /*ヘッダー始まり*/
+    /* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+    opacity: 0.8;
+    margin-left:50px;
+ }
+ 
+.site-header {
+  position: relative;
+  background-color: beige; }
+ 
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } 
+
+    .about-content a{
+        width:24.3%;
+        height:250px;
+        margin:auto;
+    }
+    .content-k{
+        border-radius: 50px;
+        padding: 3%;
+        height:300px;
+        background-color: beige;
+        text-align: center;
+        margin:auto;
+        width:25%
+    }
+    .content-k h2{
+        font-size: 15px;
+    }
+
+
+
+}
+    @media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+ 
+.nav__item a {
+    color: black;
+    opacity: 0.8;
+  display: block;
+  padding: 1.5rem 1rem; }
+ 
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } 
+    .about-content a{
+        text-decoration: none;
+        width:100%;
+        margin-bottom: 10px;  
+        height:200px;
+
+     }
+     .about-content-link1{
+        margin-left:1%;
+     }
+     .about-content1{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 50px;
+     }
+     .about-content2{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        border-radius: 50px;
+     }
+     .about-content3{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        border-radius: 50px;
+     }
+
+    }
+
+   
+    /*ヘッダー終わり*/
+     /*メインコンテンツ始まり*/
+     
+     /*メインコンテンツ終わり*/
+.main-low{
+    padding: 5%;
+    margin-bottom: 100px;
+}
+.main-low-title{
+    text-align: center;
+}
+.main-low-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-low-content1{
+    width:15%;
+}
+.main-low-content2{
+    width:80%;
+}
+.main-low-content1 div{
+    border: solid;
+    height:23%;
+}
+.main-low-content2 div{
+    border: solid;
+    height:23%;
+}
+
+
+
+     /*フッター始まり*/
+.bac{
+    
+    background-image: url(page1.jpg);
+}
+.front-footer{
+   background-color: beige;
+   min-height:10%;
+   opacity: 0.4;
+   padding:6%;
+}
+.front-footer-content{
+   background-color: white;
+   display:flex;
+   flex-wrap: wrap;
+   width:100%
+}
+
+.front-footer1{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.front-footer2{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.footer{
+   opacity: 0.8;
+   background-color: beige;
+   color:black;
+   padding: 8%;
+}
+.footer-content{
+   display: flex;
+   flex-wrap: wrap;
+   width:100%;
+}
+.footer-content1{
+   text-align: center;
+   margin:auto;
+   width:300px
+}
+.footer-content2{
+   text-align: center;
+   margin: auto;
+   width:300px
+}
+.tooter a{
+   margin:auto;
+}
+.nav__toggle{
+   opacity: 0.5;
+}
+ /*フッター終わり*/
+    </style>
+</head>
+<body>
+           <!--ヘッダー始まり-->
+        <!-- Header Start -->
+        <div id="site-content">
+            <header class="site-header">
+                <div class="wrapper site-header__wrapper">
+                <a href="#" class="brand">hikkostep</a>
+                <nav class="nav">
+                    <a href="./contact.html" class="nav__toggle" aria-expanded="false" type="button">
+                    依頼　お問い合わせ
+                    </a>
+                    <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="./index.html">Home</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="./service.html">Services</a></li>
+                    <li class="nav__item"><a href="#">Hire us</a></li>
+                    <li class="nav__item"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+            <!-- Header End -->
+            <!--ヘッダー終わり-->
+            <div class="main-low">
+                <div class="main-low-title">
+                    <h1>特定商取引に関する記述</h1>
+                </div>
+                <div class="main-low-content">
+                    <div class="main-low-content1">
+                        <div class="name">
+                            <p>事業者氏名</p>
+                        </div>
+                        <div class="address">
+                            <p>住所</p>
+                        </div>
+                        <div class="phone">
+                            <p>電話番号</p>
+                        </div>
+                        <div class="pay">
+                            <p>支払い方法</p>
+                        </div>
+                        <div class="time">
+                            <p>サービス開始時期</p>
+                        </div>
+                    </div>
+                    <div class="main-low-content2">
+                        <div class="name-content">
+                            <p>松永優斗</p>
+                        </div>
+                        <div class="address-content">
+                            <p>未定</p>
+                        </div>
+                        <div class="phone-content">
+                            <p>090-4108-6119</p>
+                        </div>
+                        <div class="pay">
+                            <p>受け渡しの際に現金での支払い</p>
+                        </div>
+                        <div class="time-content">
+                            <p>依頼を受けてから１週間以内</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+  <!--フッター始まり-->
+            <div class="bac">
+                <div class="front-footer">
+                    <div class="front-footer-content">
+                        <div class="front-footer1">
+                            <p>電話でのお問い合わせ</p>
+                            <p>090-4108-6119</p>
+                        </div>
+                        <div class="front-footer2">
+                            <p>メールでのお問い合わせ</p>
+                            <p>sworksmy1203@icloud.com</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-content1">
+                            <div class="sprai">
+                                <p>about</p>
+                                <a href="./price3">ざな専用ぼったん</a>
+                            </div>
+                        </div>
+                        <div class="footer-content2">
+                            <p>us</p>
+                            <div class="low">
+                                <a href="">特定商取引に関する表記</a>
+                            </div>
+                            <div class="low">
+                                <a href="./contact.html">お問い合わせ</a>
+                            </div>
+                            <div class="low">
+                                <a href="./service.html">サービス概要 ご依頼の流れ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--フッター終わり-->
+            </div>
+            </div>
+
+
+
+
+        
+</body>
+</html>
