@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>町田のリサイクルショップ:安くて魅力的なお宝を見つける方法</title>
+    <style>
+           html{
+        height:100%;
+        width:100%;
+            z-index: 3;
+    }
+    body{
+        margin:0;
+        height:100%;
+        width:100%;
+    }
+    body a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    padding:4px;
+}
+    /*ヘッダー始まり*/
+    /* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+    opacity: 0.8;
+    margin-left:50px;
+ }
+ 
+.site-header {
+  position: relative;
+  background-color: beige; }
+ 
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 600px) {
+    .site-header__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0; } }
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; } 
+
+    .about-content a{
+        width:24.3%;
+        height:250px;
+        margin:auto;
+    }
+    .content-k{
+        padding: 3%;
+        height:300px;
+        background-color: beige;
+        text-align: center;
+        margin:auto;
+        width:25%
+    }
+    .content-k h2{
+        font-size: 15px;
+    }
+
+
+
+}
+    @media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+ 
+.nav__item a {
+    color: black;
+    opacity: 0.8;
+  display: block;
+  padding: 1.5rem 1rem; }
+ 
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } 
+    .about-content a{
+        text-decoration: none;
+        width:100%;
+        margin-bottom: 10px;  
+        
+
+     }
+     .about-content-link1{
+        margin-left:1%;
+     }
+     .about-content1{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+        padding: 5px;
+     }
+     .about-content2{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+     }
+     .about-content3{
+        background-color: beige;
+        width:100%;
+        margin-bottom: 5px;
+     }
+
+    }
+
+   
+    /*ヘッダー終わり*/
+        /*メインの画像始まり*/
+        /* Mobile Styles */
+@media (max-width: 599px) {
+    body h1{
+        font-size: 100%;
+    }
+    .wrap{
+    background-image: url(machida-blog-img1.jpg);
+    padding:5%;
+    color:beige;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.wrap1 p{
+    text-align: center;
+}
+ul{
+    padding:3%;
+}
+.phone-wrap{
+    background-color: beige;
+    padding:2%;
+}
+}
+/* PC Styles */
+@media (min-width: 600px) {
+    body h1{
+        font-size: 200%;
+        text-align: center;
+        padding: 2%;
+    }
+    .wrap{
+    background-image: url(machida-blog-img1.jpg);
+    padding:5%;
+    color:beige;
+}
+.wrap p{
+    padding:5%;
+    background-color: gray;
+    opacity: 0.6;
+}
+h2{
+    text-align: center;
+    padding:2%;
+}
+.wrap1 ul{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.wrap1 ul p{
+    padding:2%;
+}
+.wrap1 ul li{
+    padding:2%;
+    background-color: beige;
+    opacity: 0.7;
+    margin-right: 2%;
+}
+}
+
+
+
+
+        
+
+    /*フッター始まり*/
+.bac{
+    
+    background-image: url(page1.jpg);
+}
+.front-footer{
+   background-color: beige;
+   min-height:10%;
+   opacity: 0.4;
+   padding:6%;
+}
+.front-footer-content{
+   background-color: white;
+   display:flex;
+   flex-wrap: wrap;
+   width:100%
+}
+
+.front-footer1{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.front-footer2{
+   text-align:center;
+   margin:auto;
+   width:300px
+}
+
+.footer{
+   opacity: 0.8;
+   background-color: beige;
+   color:black;
+   padding: 8%;
+}
+.footer-content{
+   display: flex;
+   flex-wrap: wrap;
+   width:100%;
+}
+.footer-content1{
+   text-align: center;
+   margin:auto;
+   width:300px
+}
+.footer-content2{
+   text-align: center;
+   margin: auto;
+   width:300px
+}
+.tooter a{
+   margin:auto;
+}
+.nav__toggle{
+   opacity: 0.5;
+}
+ /*フッター終わり*/
+ .banner{
+    width:100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background-color: beige;
+    padding:20px;
+    text-align: center;
+
+}
+    </style>
+
+</head>
+<body>
+     <!--ヘッダー始まり-->
+        <!-- Header Start -->
+        <div id="site-content">
+            <header class="site-header">
+                <div class="wrapper site-header__wrapper">
+                <a href="#" class="brand">hikkostep</a>
+                <nav class="nav">
+                    <a href="./contact.html" class="nav__toggle" aria-expanded="false" type="button">
+                    依頼　お問い合わせ
+                    </a>
+                    <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="./index.html">Home</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="./service.html">Services</a></li>
+                    <li class="nav__item"><a href="#">Hire us</a></li>
+                    <li class="nav__item"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </header>
+            <!-- Header End -->
+            <!--ヘッダー終わり-->
+             <!--コンテンツ始まり-->
+             <div class="wrap1">
+                <div class="wrap">
+                    <h1>町田のリサイクルショップ：お宝を見つける方法とエコライフのススメ </h1>
+                    <p>町田市にあるリサイクルショップは、予算に制約のある買い物好きにとってすばらしい宝庫です。この記事では町田のリサイクルショップで手ごろな価格で魅力的な商品を見つける方法について紹介します。安くて素敵な宝物が手に入るチャンスを逃さないよう、おすすめのリサイクルショップとお得なショッピングのヒントを紹介します。</p>
+                </div>
+                <h2 class="h2-1">町田のおすすめのリサイクルショップ</h2>
+                <p class="h2-1">町田市内で評判の良いリサイクルショップを紹介。各店舗の特徴や商品について説明。</p>
+                <ul>
+                    <li>
+                        <h3>>町田リサイクルセンター</h3>
+                        <p>ショップ特徴：幅広い商品カテゴリー</p>
+                        <p>ポイント：家具、家電、洋服、書籍など、多くの商品がそろっています。品揃えの幅広さが特徴で、価格も手ごろです。</p>
+                    </li>
+                    <li>
+                        <h3>>グリーンハウス町田</h3>
+                        <p>ショップ特徴：エコ志向のアイテム</p>
+                        <p>ポイント：リサイクル品にエコロジカルなアプローチを取り、家庭用品や衣類などの環境にやさしい商品を提供しています。価格帯はリーズナブルです。</p>
+                    </li>
+                    <li>
+                        <h3>町田市民リサイクルセンター</h3>
+                        <p>ショップ特徴：地域コミュニティに貢献</p>
+                        <p>ポイント：売り上げの一部が地域の慈善事業に寄付されており、コミュニティに貢献しています。家電や子供用品など、多彩なアイテムを提供。</p>
+                    </li>
+                    <li>
+                        <h3>アースライズ町田店</h3>
+                        <p>ショップ特徴：ブランド品のセレクション</p>
+                        <p>ポイント：ブランド品の中古品を中心にセレクションしており、おしゃれなアイテムを手ごろな価格で手に入れられます。</p>
+                    </li>
+                </ul>
+                <div class="phone-wrap">
+                    <h2>お得に買い物をする方法</h2>
+                    <ul>
+                        <il>
+                            <h3>リサイクルショップのセール情報をチェックする</h3>
+                            <p>リサイクルショップは時折セールを行います。特定の日付や季節に価格が割引されることがあります。店のウェブサイトやソーシャルメディアページをフォローして、セール情報をキャッチしましょう。</p>
+                        </il>
+                        <il>
+                            <h3>週末に訪問</h3>
+                            <p>週末には多くのリサイクルショップで新しいアイテムが出品されます。週末に訪れることで、新着のお得な商品に巡り合えるかもしれません。</p>
+                        </il>
+                        <il>
+                            <h3>価格交渉</h3>
+                            <p>リサイクルショップの中には、価格交渉が行われている場所もあり、お気に入りのアイテムが予算に合わない場合、スタッフに値引き交渉を試みてみましょう。柔軟な価格設定が行われていることがあります。</p>
+                        </il>
+
+                    </ul>
+                </div>
+                <h2>保障について</h2>
+                <ul>
+                    <il>
+                        <h3>品質の表記</h3>
+                        <p>リサイクルショップでは、商品の品質に応じて異なる表記がなされることがあります。例えば、「未使用品」、「良い状態」、「使用感あり」などの表記があり、商品の状態を示しています。</p>
+                    </il>
+                    <il>
+                        <h3>動作確認</h3>
+                        <p>電化製品や機械類に関して、リサイクルショップは通常、動作確認を行います。商品が正常に動作することを確認し、欠陥がないことを保証します。</p>
+                    </il>
+                    <il>
+                        <h3>返品ポリシー</h3>
+                        <p>リサイクルショップは一般的に、商品の返品ポリシーを備えています。商品を購入後、一定期間内に問題が発生した場合、返品や交換ができることがあります。ただし、ポリシーはショップによって異なるため、購入前に確認が必要です。</p>
+                    </il>
+                    <il>
+                        <h3>保証期間</h3>
+                        <p>一部のリサイクルそっぷは一定期間の保証を提供することが多いです。例えば、一か月の動作保証がついていることがあります。この期間内に問題が発生した場合、修理または交換が行われます。</p>
+                    </il>
+                </ul>
+            </div>
+             <!--コンテンツ終わり-->
+
+            <div class="banner">
+                <a href="./contact.html">お問い合わせにて見積もり</a>
+                <a href="./price-blog.html">実際に取引された価格例</a>
+            </div>
+    <!--フッター始まり-->
+            <div class="bac">
+                <div class="front-footer">
+                    <div class="front-footer-content">
+                        <div class="front-footer1">
+                            <p>電話でのお問い合わせ</p>
+                            <p>090-4108-6119</p>
+                        </div>
+                        <div class="front-footer2">
+                            <p>メールでのお問い合わせ</p>
+                            <p>hikkostep.gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+    
+                 
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-content1">
+                            <div class="sprai">
+                                <p>about</p>
+                            </div>
+                        </div>
+                        <div class="footer-content2">
+                            <p>us</p>
+                            <div class="low">
+                                <a href="./low.html">特定商取引に関する表記</a>
+                            </div>
+                            <div class="low">
+                                <a href="./contact.html">お問い合わせ</a>
+                            </div>
+                            <div class="low">
+                                <a href="./service.html">サービス概要 ご依頼の流れ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--フッター終わり-->
+</body>
+</html>
